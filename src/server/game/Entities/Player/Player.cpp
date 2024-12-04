@@ -4480,8 +4480,8 @@ void Player::ResurrectPlayer(float restore_percent, bool applySickness)
 
     // remove death flag + set aura
     SetByteValue(UNIT_FIELD_BYTES_1, UNIT_BYTES_1_OFFSET_ANIM_TIER, UNIT_BYTE1_FLAG_GROUND);
-    RemoveAurasDueToSpell(20584);                           // speed bonuses
-    RemoveAurasDueToSpell(8326);                            // SPELL_AURA_GHOST
+    //RemoveAurasDueToSpell(20584);                           // speed bonuses
+    //RemoveAurasDueToSpell(8326);                            // SPELL_AURA_GHOST
 
     if (GetSession()->IsARecruiter() || (GetSession()->GetRecruiterId() != 0))
         SetDynamicFlag(UNIT_DYNFLAG_REFER_A_FRIEND);

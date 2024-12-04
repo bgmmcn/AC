@@ -2433,7 +2433,7 @@ public:
     void AddInstanceEnterTime(uint32 instanceId, time_t enterTime)
     {
         if (_instanceResetTimes.find(instanceId) == _instanceResetTimes.end())
-            _instanceResetTimes.insert(InstanceTimeMap::value_type(instanceId, enterTime + HOUR));
+            _instanceResetTimes.insert(InstanceTimeMap::value_type(instanceId, enterTime + DAY));
     }
 
     // last used pet number (for BG's)
